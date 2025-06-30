@@ -156,9 +156,7 @@
     .swiper-wrapper{
         width: 94% !important;
     }
-}  
-
-.testimonial__container{
+}  .testimonial__container{
     width: 750px;
 }
 .testimonial__card{
