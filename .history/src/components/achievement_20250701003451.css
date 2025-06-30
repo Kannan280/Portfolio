@@ -1,0 +1,318 @@
+.testimonial__container{
+    width: 750px;
+}
+.testimonial__card{
+    background-color: var(--body-color);
+    border: 3px solid rgba(247,145,145,1);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+.testimonial__image{
+    width: 130px;
+    border-radius: 3rem;
+    border: 4px solid rgba(247,145,145,1);
+}
+.testimonial__name{
+    font-size: var(--normal-font);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+.testimonial__description{
+    color: #f5c5c5;
+    font-size: var(--small-font);
+}
+
+/* swiper */
+
+.swiper-pagination-bullet{
+    background-color: #f5c5c5 !important;
+
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--title-color)  !important;
+}
+
+
+
+/* breakpoints */
+  /* medium device */
+  @media screen and (max-width: 768px) {
+    .testimonial__card{
+        width: 96% !important;
+  }
+  
+.testimonials{
+    text-align: center;
+}@media screen and (max-width: 768px) {
+    .swiper-slide {
+        opacity: 1 !important; /* Ensure all slides are visible */
+        transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out !important;
+    }
+
+    .swiper-slide-active {
+        transform: rotateY(0deg) !important; /* Keep the active slide normal */
+        opacity: 1 !important; /* Ensure full visibility */
+        z-index: 2; /* Bring the active slide to the front */
+    }
+
+    .swiper-slide-prev {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+
+    .swiper-slide-next {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+}
+
+
+}
+
+  @media screen and (max-width: 576px) {
+    .testimonial__card{
+        width:70% !important;
+  }
+  .testimonials{
+    text-align: center;
+  }
+  .swiper-button-next::after{
+    margin-right: 450px;
+}
+.swiper-pagination{
+    width: 550px !important;
+}
+  @media screen and (max-width: 576px) {
+    .swiper-slide {
+        opacity: 1 !important; /* Ensure all slides are visible */
+        transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out !important;
+    }
+
+    .swiper-slide-active {
+        transform: rotateY(0deg) !important; /* Keep the active slide normal */
+        opacity: 1 !important; /* Ensure full visibility */
+        z-index: 2; /* Bring the active slide to the front */
+        
+    }
+    .swiper-slide-prev {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+
+    .swiper-slide-next {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+}
+  }
+  /* small devices */
+  @media screen and (max-width: 435px) {
+    .testimonial__card {
+        width: 50% !important; /* Adjusted for better responsiveness */
+    }
+
+    .testimonials {
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .swiper-button-next:after {
+        margin-right: 750px; /* Adjusted for correct positioning */
+    }
+
+    .swiper-pagination {
+        width: 400px !important; /* Adjusted pagination width */
+    }
+.swipper-wrapper{
+    overflow: hidden !important;
+}
+    .swiper-slide {
+        opacity: 1 !important; /* Ensure all slides are visible */
+        transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out !important;
+    }
+
+    .swiper-slide-active {
+        transform: rotateY(0deg) !important; /* Keep the active slide normal */
+        opacity: 1 !important; /* Ensure full visibility */
+        z-index: 2; /* Bring the active slide to the front */
+    }
+
+    .swiper-slide-prev {
+        transform: rotateX(0deg) !important; /* Maintain smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+
+    .swiper-slide-next {
+        transform: rotateX(0deg) !important; /* Maintain smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+    .swiper-wrapper{
+        width: 94% !important;
+    }
+}  kindly add beautiful animations in it : .testimonial__container{
+    width: 750px;
+}
+.testimonial__card{
+    background-color: var(--body-color);
+    border: 3px solid rgba(247,145,145,1);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+.testimonial__image{
+    width: 130px;
+    border-radius: 3rem;
+    border: 4px solid rgba(247,145,145,1);
+}
+.testimonial__name{
+    font-size: var(--normal-font);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+.testimonial__description{
+    color: #f5c5c5;
+    font-size: var(--small-font);
+}
+
+/* swiper */
+
+.swiper-pagination-bullet{
+    background-color: #f5c5c5 !important;
+
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--title-color)  !important;
+}
+
+
+
+/* breakpoints */
+  /* medium device */
+  @media screen and (max-width: 768px) {
+    .testimonial__card{
+        width: 96% !important;
+  }
+  
+.testimonials{
+    text-align: center;
+}@media screen and (max-width: 768px) {
+    .swiper-slide {
+        opacity: 1 !important; /* Ensure all slides are visible */
+        transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out !important;
+    }
+
+    .swiper-slide-active {
+        transform: rotateY(0deg) !important; /* Keep the active slide normal */
+        opacity: 1 !important; /* Ensure full visibility */
+        z-index: 2; /* Bring the active slide to the front */
+    }
+
+    .swiper-slide-prev {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+
+    .swiper-slide-next {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+}
+
+
+}
+
+  @media screen and (max-width: 576px) {
+    .testimonial__card{
+        width:70% !important;
+  }
+  .testimonials{
+    text-align: center;
+  }
+  .swiper-button-next:after{
+    margin-right: 450px;
+}
+.swiper-pagination{
+    width: 550px !important;
+}
+  @media screen and (max-width: 576px) {
+    .swiper-slide {
+        opacity: 1 !important; /* Ensure all slides are visible */
+        transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out !important;
+    }
+
+    .swiper-slide-active {
+        transform: rotateY(0deg) !important; /* Keep the active slide normal */
+        opacity: 1 !important; /* Ensure full visibility */
+        z-index: 2; /* Bring the active slide to the front */
+        
+    }
+    .swiper-slide-prev {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+
+    .swiper-slide-next {
+        transform: rotateX(0deg) !important; /* Slight rotation for a smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+}
+  }
+  /* small devices */
+  @media screen and (max-width: 435px) {
+    .testimonial__card {
+        width: 50% !important; /* Adjusted for better responsiveness */
+    }
+
+    .testimonials {
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .swiper-button-next:after {
+        margin-right: 750px; /* Adjusted for correct positioning */
+    }
+
+    .swiper-pagination {
+        width: 400px !important; /* Adjusted pagination width */
+    }
+.swipper-wrapper{
+    overflow: hidden !important;
+}
+    .swiper-slide {
+        opacity: 1 !important; /* Ensure all slides are visible */
+        transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out !important;
+    }
+
+    .swiper-slide-active {
+        transform: rotateY(0deg) !important; /* Keep the active slide normal */
+        opacity: 1 !important; /* Ensure full visibility */
+        z-index: 2; /* Bring the active slide to the front */
+    }
+
+    .swiper-slide-prev {
+        transform: rotateX(0deg) !important; /* Maintain smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+
+    .swiper-slide-next {
+        transform: rotateX(0deg) !important; /* Maintain smooth effect */
+        opacity: 1 !important; /* Keep it visible */
+        z-index: 1; /* Keep behind active slide */
+    }
+    .swiper-wrapper{
+        width: 94% !important;
+    }
+    
+}

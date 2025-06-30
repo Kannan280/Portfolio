@@ -1,0 +1,106 @@
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Footer Main */
+.footer {
+    background-color: var(--body-color);
+    border-top: 1px solid rgba(247, 145, 145, 0.3);
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+/* Footer Container */
+.footer__container {
+    padding: 2rem 0 6rem;
+}
+
+/* Footer Title */
+.footer__title {
+    text-align: center;
+    margin-bottom: var(--mb-2);
+    color: var(--title-color);
+    animation: fadeInUp 2s ease forwards;
+}
+
+/* Footer Links */
+.footer__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin-bottom: var(--mb-2);
+    animation: fadeInUp 2.2s ease forwards;
+}
+
+.footer__link {
+    color: var(--title-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__link:hover {
+    color: var(--title-color-dark);
+    transform: translateY(-4px);
+}
+
+/* Footer Social Icons */
+.footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+    animation: fadeInUp 2.4s ease forwards;
+}
+
+.footer__social-link {
+    background-color: var(--body-color);
+    color: var(--title-color);
+    font-size: 1.12rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    display: inline-flex;
+    transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+.footer__social-link:hover {
+    color: var(--title-color-dark);
+    background-color: rgba(247, 145, 145, 0.1);
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Footer Copyright */
+.footer__copy {
+    display: block;
+    margin-top: 2rem;
+    color: var(--title-color);
+    text-align: center;
+    font-size: var(--small-font);
+    animation: fadeInUp 2.6s ease forwards;
+}
+
+/* ================= */
+/* Breakpoints */
+/* ================= */
+
+/* Large devices */
+@media screen and (max-width: 992px) {
+    .footer__social-link {
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+    }
+}

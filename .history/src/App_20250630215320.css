@@ -1,0 +1,155 @@
+/* ================= Animations ================== */
+
+/* Section fade-up */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth title fade */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button pulse on hover */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Background subtle float */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ================= Base Animations Applied ================== */
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  animation: fadeUp 1.5s ease;
+}
+
+.section__title {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.section__subtitle {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+img {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ================= Buttons Animation ================== */
+
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--body-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  transition: background-color 0.4s, transform 0.4s;
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+  animation: pulse 0.6s ease;
+  transform: translateY(-3px);
+}
+
+/* ================= Scroll Behavior Smooth ================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= Container Fade ================== */
+
+.container {
+  margin-top: var(--mb-1-5);
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeUp 1.3s ease;
+}
+
+/* ================= Grid Animation ================== */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  animation: fadeUp 1.5s ease;
+}
+
+/* ================= Titles ================== */
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+  transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+  color: var(--title-color-dark);
+}
+
+/* ================= Links ================== */
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--title-color-dark);
+}
+
+/* ================= Layout Breakpoints ================== */
+
+/* Large devices */
+@media screen and (max-width: 992px) {
+  .container {
+    margin-top: var(--mb-1-5);
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+/* Small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}

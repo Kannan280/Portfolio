@@ -1,0 +1,143 @@
+.about__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.about__img {
+  width: 350px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about__data{
+    text-align: center;
+    padding: 2%;
+}
+
+.about__icon {
+  color: #f5c5c5;
+}
+
+.about__info {
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.section__subtitle {
+  color: #f5c5c5;
+}
+
+.about__box {
+  background-color: var(--body-color);
+  border: 1px solid rgba(247 145 145 /100%);
+  color: black;
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+  span {
+    color: #f5c5c5;
+  }
+}
+
+.about__description {
+  color: #f5c5c5;
+  line-height: 2;
+}
+
+.about__icon {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-bottom: var(---mb-0-5);
+}
+
+.about__title {
+  font-size: var(--small-font);
+  font-weight: var(--font-medium);
+}
+
+.about__subtitle {
+  font-size: var(--tiny-font);
+}
+
+.about__description {
+  padding: 0 1.5rem 0 1.5rem;
+  margin-bottom: var(--mb-2-5);
+  text-align: justify;
+}
+
+
+/* breakpoints */
+/* large devices */
+@media screen and (max-width: 992px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+  .about__img{
+    width: 220px;
+  }
+  .about__box{
+    padding: 0.75rem 0.5rem;
+  }
+  .about__data{
+    text-align: center;
+  }
+  .about__info{
+    justify-content: center;
+  }
+  .about__description{
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+}
+/* medium device */
+@media screen and (max-width: 768px) {
+  body{
+    margin: 0 0 var(--header-height) 0;
+  }
+    .about__info{
+        display: grid!important;
+        gap: 1.5rem!important;
+        margin-top: 27px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about__container{
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+    .about__info{
+        grid-template-columns: repeat(3,1fr);
+        margin-right: 43px;
+    }
+    .about__description{
+        padding: 0 3.5rem 0 0.8rem
+    }
+    .about__img{
+        margin-right: 7%;
+    }
+}
+/* small devices */
+@media screen and (max-width: 435px) {
+    .about__img{
+        margin-right: 8%;
+    }
+    .about__info{
+      margin-right: 0;
+    }
+    .about__img{
+      margin-right: 0%;
+  }
+    .about__description{
+      padding: 0 0 0 0;
+    }
+    .section{
+      margin: 10px;
+    }
+    .button{
+      margin-left: 5%;
+    }
+}

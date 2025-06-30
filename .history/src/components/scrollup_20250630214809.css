@@ -1,0 +1,83 @@
+/* ================= Animations ================= */
+@keyframes bounceUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+/* ================= Scroll-Up Styles ================= */
+.scrollup {
+  position: fixed;
+  right: 2.5rem;
+  bottom: -20%;
+  background-color: var(--body-color);
+  opacity: 0.8;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: bottom 0.4s, transform 0.3s, opacity 0.4s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Visible state with fade-in */
+.show-scroll {
+  bottom: 3rem;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.scrollup:hover {
+  transform: translateY(-5px) scale(1.1);
+  opacity: 1;
+}
+
+/* Icon bounce effect */
+.scrollup__icon {
+  font-size: 2rem;
+  color: var(--container-color);
+  animation: bounceUp 2s infinite;
+  transition: color 0.3s ease;
+}
+
+.scrollup__icon:hover {
+  color: var(--title-color-dark);
+}
+
+/* ================= Responsive ================= */
+@media screen and (max-width: 992px) {
+  .scrollup {
+    right: 1.5rem;
+    padding: 0.25rem 0.4rem;
+  }
+  .scrollup__icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .show-scroll {
+    bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .scrollup {
+    right: 1rem;
+  }
+}

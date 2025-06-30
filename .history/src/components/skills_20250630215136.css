@@ -1,0 +1,125 @@
+/* ================= Animations ================== */
+
+/* Skills card fade-in with scale */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Icon bounce */
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ================= Skills Section ================== */
+
+.skills__content {
+  background-color: var(--body-color);
+  border: 1px solid rgba(245, 197, 197, 1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInScale 1s ease forwards;
+}
+
+.skills__content:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skills__title {
+  font-size: var(--normal-font);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.skills__group {
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+
+.skills__data {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skills__data:hover {
+  transform: translateX(5px);
+}
+
+.skills__name {
+  font-size: var(--normal-font);
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+}
+
+.skills__level {
+  font-size: 0.8rem;
+  color: #f5c5c5;
+}
+
+.skills .bx-badge-check {
+  font-size: 1rem;
+  color: #f5c5c5;
+  animation: iconBounce 2s infinite ease-in-out;
+}
+
+span.skills__level {
+  color: #f5c5c5;
+}
+
+/* ================= Responsive ================== */
+
+@media screen and (max-width: 992px) {
+  .skills__container {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__content {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .skills__box {
+    column-gap: 1.25rem;
+  }
+
+  .skills__name {
+    font-size: var(--small-font);
+  }
+}
