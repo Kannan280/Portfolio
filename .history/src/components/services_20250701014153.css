@@ -39,7 +39,7 @@
 
 .services__modal-service{
   display: flex;
-  align-items: flex-start;
+  align-items: fle;
   column-gap: .5rem;
 }
 .services__modal-content{

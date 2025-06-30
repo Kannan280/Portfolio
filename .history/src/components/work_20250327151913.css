@@ -1,5 +1,4 @@
 .work__container{
-    display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 2rem !important;
     justify-content: center;

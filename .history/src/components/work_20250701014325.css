@@ -1,5 +1,5 @@
 .work__container{
-    display: grid;
+    display: ;
     grid-template-columns: repeat(2, max-content);
     gap: 2rem !important;
     justify-content: center;

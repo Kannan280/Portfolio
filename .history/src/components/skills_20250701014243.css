@@ -7,7 +7,7 @@ i.bx.bx-badge-check{
 }
 
 .skills__container{
-    display: grid;
+    display: ;
     grid-template-columns: repeat(3, 350px);
     column-gap: 3rem !important;
     justify-content: center;
