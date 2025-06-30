@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b79c88d9.css",
-    "main.js": "/Portfolio/static/js/main.39019048.js",
+    "main.css": "/Portfolio/static/css/main.ec75179f.css",
+    "main.js": "/Portfolio/static/js/main.45a42b39.js",
     "static/js/453.f2cee86e.chunk.js": "/Portfolio/static/js/453.f2cee86e.chunk.js",
     "static/media/about.jpg": "/Portfolio/static/media/about.dadca7b47b97b63f8643.jpg",
-    "static/media/KannanDresume.pdf": "/Portfolio/static/media/KannanDresume.579b980b1bd1aa8c6990.pdf",
     "static/media/work10.jpeg": "/Portfolio/static/media/work10.460722ed62c0cae33542.jpeg",
+    "static/media/KannanDResume.pdf": "/Portfolio/static/media/KannanDResume.4b7961afcb3cd6500b54.pdf",
     "static/media/work9.jpeg": "/Portfolio/static/media/work9.b64214bc3c01bbe3dcf6.jpeg",
     "static/media/work11.jpeg": "/Portfolio/static/media/work11.eac2d62b8a5797f14a42.jpeg",
     "static/media/work12.jpeg": "/Portfolio/static/media/work12.179d675df57d076e13af.jpeg",
@@ -18,12 +18,12 @@
     "static/media/work1.jpg": "/Portfolio/static/media/work1.321b4ae3bf404acdfdc6.jpg",
     "static/media/work3.jpg": "/Portfolio/static/media/work3.135e9065694bc13dc31d.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.b79c88d9.css.map": "/Portfolio/static/css/main.b79c88d9.css.map",
-    "main.39019048.js.map": "/Portfolio/static/js/main.39019048.js.map",
+    "main.ec75179f.css.map": "/Portfolio/static/css/main.ec75179f.css.map",
+    "main.45a42b39.js.map": "/Portfolio/static/js/main.45a42b39.js.map",
     "453.f2cee86e.chunk.js.map": "/Portfolio/static/js/453.f2cee86e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b79c88d9.css",
-    "static/js/main.39019048.js"
+    "static/css/main.ec75179f.css",
+    "static/js/main.45a42b39.js"
   ]
 }
